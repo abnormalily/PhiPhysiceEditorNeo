@@ -2,6 +2,8 @@
 
 本文件说明如何把当前目录推到 GitHub、生成 1.0 的两个架构压缩包，并创建 Release。
 
+> 只想尽快上传？直接看 [UPLOAD_QUICKSTART.md](UPLOAD_QUICKSTART.md)，那里只有最短的几条命令。
+
 ## 1. 发布前检查
 
 - 确认没有把 `build/`、`dist/`、`settings.ini`、`exports/` 或本地路径提交进仓库。
