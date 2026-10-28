@@ -435,7 +435,6 @@ python tools/generate_icon.py
 ## 发布与仓库
 
 - 1.0 发布说明：[docs/RELEASE_NOTES_v1.0.0.md](docs/RELEASE_NOTES_v1.0.0.md)
-- GitHub 上传、打标签、创建 Release 的完整步骤：[docs/PUBLISHING.md](docs/PUBLISHING.md)
 - 一键打包命令：`powershell -ExecutionPolicy Bypass -File .\scripts\package_windows.ps1`
 - 构建产物、运行设置、导出结果和压缩包都在 `.gitignore` 中排除，仓库只保留源码、数据、文档和资源。
 
