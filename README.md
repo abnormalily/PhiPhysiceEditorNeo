@@ -1,0 +1,2 @@
+# PhiPhysiceEditorNeo
+使用DeepSeekHarness对作者自身原有的物理程序重新构建，可以为你的Phi自制作谱添加物理效果。
