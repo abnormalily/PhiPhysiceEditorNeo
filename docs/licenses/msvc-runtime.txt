@@ -1,0 +1,15 @@
+﻿# Microsoft Visual C++ 运行库（x64）
+
+本文件夹中的 DLL 来自 Visual Studio 可再发行组件：
+
+- `msvcp140.dll`
+- `vcruntime140.dll`
+- `vcruntime140_1.dll`
+
+它们按 Microsoft 的可再发行条款随 PhiPhysiceEditorNeo 一起分发，只用于让没有安装
+Microsoft Visual C++ 2015-2022 Redistributable (x64) 的电脑也能直接运行程序。
+
+来源：`VC\Redist\MSVC\14.51.36231\x64\Microsoft.VC145.CRT`，文件版本 14.51.36247.0。
+
+许可与官方下载：<https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist>
+

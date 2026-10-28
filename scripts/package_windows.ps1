@@ -105,16 +105,16 @@ foreach ($arch in @('x64', 'x86')) {
         Copy-Item -Force $dll (Join-Path $stage (Split-Path $dll -Leaf))
     }
 
+    # No timestamps or local paths here: a staged folder must be byte-identical
+    # to the committed one so the release hashes can be reproduced.
     $buildInfo = @(
         "PhiPhysiceEditorNeo $Version",
         "Architecture: $arch",
         "Configuration: Release",
-        "Built: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss zzz')",
-        "Runtime DLLs: $((($runtime | ForEach-Object { Split-Path $_ -Leaf }) -join ', '))",
         "",
         "License: MIT (see LICENSE)",
-        "Font: PhiPhysice Neo Sans Regular, SIL OFL 1.1 (see assets/fonts/)",
-        "Third-party notices: THIRD_PARTY_NOTICES.md",
+        "Font: PhiPhysice Neo Sans Regular, SIL OFL 1.1 (see assets/fonts/LICENSE-OFL.txt and NOTICE.md)",
+        "Third-party notices: THIRD_PARTY_NOTICES.md (full texts in docs/licenses/)",
         ""
     ) -join [Environment]::NewLine
     Set-Content -Path (Join-Path $stage 'BUILD-INFO.txt') -Value $buildInfo -Encoding UTF8
