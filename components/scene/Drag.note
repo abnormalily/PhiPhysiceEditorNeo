@@ -1,0 +1,17 @@
+# PhiPhysiceEditorNeo shape v2
+# 设计坐标 Y 轴向上为正；每一行顶点遵循同一规则。
+# &<变量名> <显示名> = <默认值>   新增一个可编辑变量
+# $<节点编号> <X表达式> <Y表达式>  节点随变量偏移
+yaxis up
+name Drag
+vertices 6
+v -85.000 -6.000
+v 85.000 -6.000
+v 90.000 0.000
+v 85.000 6.000
+v -85.000 6.000
+v -90.000 0.000
+density 0.85
+friction 0.55
+restitution 0.06
+color 253 214 122

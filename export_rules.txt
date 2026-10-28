@@ -1,0 +1,13 @@
+# PhiPhysiceEditorNeo / RePhiEditor note3d.json rules
+# 程序不内置输出内容，以下模板完全决定导出结果。
+# 参数列表：x,y,angle 会分别输出 type 1,2,3；beats 通过 beatWhole/beatPart 写入 t1/t2。
+# 占位符：{index} {id} {type} {scene} {segmentIndex} {segmentNumber} {paramIndex} {paramType} {param} {value} {nextValue} {split} {beatWhole} {beatPart} {nextBeatWhole} {nextBeatPart} {beat} {nextBeat} {x} {y} {angle} {beats} {nextX} {nextY} {nextAngle} {nextBeats} {componentCount} {eventCount} {year} {month} {day} {hour} {minute} {second}
+# 转义：\n 换行、\t 制表、\\ 反斜杠。
+parameters=x,y,angle
+prefix={\n   "Events" : [\n
+component_prefix=      [\n
+parameter=         {\n            "be":0,\n            "bp" : [0.0, 0.0, 0.0, 0.0] ,\n            "e" : 1,\n            "el" : 0.0,\n            "er" : 1.0,\n            "in" : 0,\n            "layer" : 0,\n            "line" : {index},\n            "link" : 0,\n            "t1" : [{beatWhole}, {beatPart}, {split}] ,\n            "t2" : [{nextBeatWhole}, {nextBeatPart}, {split}] ,\n            "type" : {paramIndex},\n            "x1" : {value},\n            "x2" : {nextValue}\n         }
+between_parameters=,\n
+component_suffix=      ]\n
+between_components=,\n
+suffix=   ],\n   "author":"{year}/{month}/{day}/{hour}:{minute}:{second}",\n   "intro" : "Note:{componentCount},Events:{eventCount}",\n   "name" : "Note_Physical_Events"\n}\n

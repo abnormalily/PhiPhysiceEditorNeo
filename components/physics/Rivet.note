@@ -1,0 +1,5 @@
+# PhiPhysiceEditorNeo component v1
+kind rivet
+name 铆钉
+radius 15
+color 172 178 190

@@ -1,0 +1,34 @@
+# Build output
+/build/
+/dist/
+/out/
+*.obj
+*.o
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.log
+
+# IDE / editor
+/.vs/
+/.vscode/
+*.user
+*.suo
+CMakeUserPresets.json
+
+# Runtime state (created by the application)
+/settings.ini
+/exports/
+/screenshots/
+
+# Release archives
+*.zip
+*.7z
+*.tar.gz
+
+# OS metadata
+.DS_Store
+Thumbs.db

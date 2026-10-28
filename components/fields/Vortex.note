@@ -1,0 +1,13 @@
+# PhiPhysiceEditorNeo field v1
+kind 5
+name 涡流场
+shape 0
+width 100
+height 100
+radius 50
+strength 0
+buoyancy 1.2
+damping 0
+vortex 20
+dirx 0
+diry 1

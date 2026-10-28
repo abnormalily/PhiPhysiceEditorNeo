@@ -1,0 +1,12 @@
+# PhiPhysiceEditorNeo field v1
+kind 0
+name 引力场
+shape 0
+width 100
+height 100
+radius 50
+strength 24
+buoyancy 1.2
+damping 0
+dirx 0
+diry 1
